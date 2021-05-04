@@ -6,18 +6,19 @@ import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
 import javax.swing.JOptionPane;
 import javax.swing.JRadioButton;
+import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
 public class Filme implements ActionListener{
 	
 	private JTextField txtTitulo;
-	private JTextField txtSinopse;
+	private JTextArea txtSinopse;
 	private JComboBox cbGenero;
 	ButtonGroup onde = null;
 	private JCheckBox ckbAssistido;
 	private StarRater srAvaliacao;
 	
-	public Filme(JTextField txtTitulo, JTextField txtSinopse, JComboBox cbGenero, ButtonGroup grupoRB, JCheckBox ckbAssistido, StarRater srAvaliacao){
+	public Filme(JTextField txtTitulo, JTextArea txtSinopse, JComboBox cbGenero, ButtonGroup grupoRB, JCheckBox ckbAssistido, StarRater srAvaliacao){
 		this.txtTitulo = txtTitulo;
 		this.txtSinopse = txtSinopse;
 		this.cbGenero = cbGenero;
