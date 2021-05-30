@@ -1,3 +1,4 @@
+package br.com.fiap.app;
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 

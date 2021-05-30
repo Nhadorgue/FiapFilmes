@@ -1,4 +1,7 @@
+package br.com.fiap.model;
+
 import java.awt.event.ActionListener;
+import br.com.fiap.dao.*;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -67,7 +70,7 @@ public class Filme{
 
 	private int srAvaliacao;
 	
-	public static ActionListener cadastrar(Filme filme) {
+	public static ActionListener cadastrar(br.com.fiap.app.Filme filme) {
 		
 		FilmeDAO dao = new FilmeDAO();
 		dao.cadastrar(filme);
